@@ -53,7 +53,7 @@ void setServo(int cmd, int motor)
         for(i = 0; i < DEGREE90 ; i++)
         {
           *gpset0 |= (1 << motor);
-          usleep_range(1400, 1400);
+          usleep_range(1300, 1300);
           *gpclr0 |= (1 << motor);
           mdelay(PWM_RANGE-1);
         }
@@ -65,7 +65,7 @@ void setServo(int cmd, int motor)
         for(i=0; i < DEGREE90; i++)
         {
           *gpset0 |= (1 << motor);
-          usleep_range(1600, 1600);
+          usleep_range(1700, 1700);
           *gpclr0 |= (1 << motor);
           mdelay(PWM_RANGE-1);
         }
